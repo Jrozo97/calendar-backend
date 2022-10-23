@@ -2,7 +2,6 @@ const { response } = require('express');
 const jwt = require('jsonwebtoken');
 
 
-
 const validatorJWT = ( req, res = response, next ) => {
 
     // x-token headers
@@ -31,9 +30,6 @@ const validatorJWT = ( req, res = response, next ) => {
             msg: 'Token no valido'
         })
     }
-
-
-
 
     next();
 
